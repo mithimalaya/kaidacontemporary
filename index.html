@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<title>Kaida Contemporary</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="kaida_favicon.jpg">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/font.css">
+<link rel="stylesheet" href="styles/font-awesome.min.css">
+<link rel="stylesheet" href="styles/bootstrap.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!--
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+	<li><a href="#">Action</a></li>
+	<li><a href="#">Another action</a></li>
+	<li><a href="#">Something else here</a></li>
+	<li role="separator" class="divider"></li>
+	<li class="dropdown-header">Nav header</li>
+	<li><a href="#">Separated link</a></li>
+	<li><a href="#">One more separated link</a></li>
+  </ul>
+</li>-->
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">
+		<img class="nav-logo-text" src="images/kaida-navbar.png" />
+	  </a>
+	</div>
+	<div id="navbar" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav navbar-right">
+		<li class="active"><a href="#">Home</a></li>
+		<li class="dropdown">
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Exhibitions <span class="caret"></span></a>
+		  <ul class="dropdown-menu">
+			<li><a href="#">Current</a></li>
+			<li><a href="#">Upcoming</a></li>
+			<li><a href="#">Past Shows</a></li>
+		  </ul>
+		</li>
+		<li><a href="#">Artists</a></li>
+		<li><a href="#">The Gallery</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Press</a></li>
+	  </ul>
+	</div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<!-- Content -->
+<div id="large-header">
+	<canvas id="kaida-canvas"></canvas>
+	<div class="w3-panel w3-padding-32 kaida-home">
+		<div class="w3-center">
+			<img src="images/kaida-logo.png" />
+		</div>
+		<div class="w3-center w3-padding-32">
+		  <span class="w3-xxlarge w3-padding-16">When Kaida says contemporary, they mean it.</span>
+		</div>
+	</div>
+	
+</div>
+ 
+<div class="w3-content" style="max-width:1100px;margin-top:50px;margin-bottom:80px">
+	<!-- Current Exhibitions -->
+	<div class="w3-row-padding" id="current-exhibitions">
+		<div class="w3-center w3-padding-32">
+		  <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Current Exhibitions</span>
+		</div>
+
+		<div class="w3-half w3-margin-bottom w3-padding-32">
+		  <div class="w3-card-4">
+			<img src="images/artworks/artfusion_invite.jpg" alt="John" style="width:100%">
+			<div class="w3-container">
+			  <h3>#artfusion!</h3>
+			  <p class="w3-opacity">July 9, 2017</p>
+			  <p>A Group Exhibition featuring Rene Cuvos, Demet Dela Cruz, Darwin Guevarra, Philipp Ines, Jim Orencio, Migi Sebastian, Mike Seiling and Manuel Sintos.</p>
+			  <p><button class="w3-button w3-light-grey w3-block">Read More</button></p>
+			</div>
+		  </div>
+		</div>
+
+		<div class="w3-half w3-margin-bottom w3-padding-32">
+		  <div class="w3-card-4">
+			<img src="images/artworks/enigmas_invite.jpg" alt="Mike" style="width:100%">
+			<div class="w3-container">
+			  <h3>Enigmas</h3>
+			  <p class="w3-opacity">July 9-24, 2017</p>
+			  <p>A Solo Exhibition by DengCoy Miel. Artist’s Notes: The Pleasures of Doing Art in a Diseased Century.</p>
+			  <p><button class="w3-button w3-light-grey w3-block">Read More</button></p>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+	<div class="w3-center w3-padding-64">
+	  <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Artworks from Current Exhibitions</span>
+	</div>
+	
+    <div class="w3-display-container mySlides">
+      <img src="images/artworks/firestarter.jpg" title="Fire Starter" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Fire Starter</b><br />by Demet Dela Cruz<br />Oil on wood, mixed media, LED lights 2017<br />(30" x 36")</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>#artfusion!</b><br />July 9, 2017</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/artworks/frida.jpg" title="Frida" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Frida</b> by DengCoy Miel<br />Oil on canvas (20" x 16")</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+		<span class="w3-white w3-animate-bottom"><b>Enigmas</b><br />July 9-24, 2017</span>
+      </div>
+    </div>
+	<div class="w3-display-container mySlides">
+      <img src="images/artworks/midnightbluetraveler.jpg" title="Midnight Blue Traveler" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Midnight Blue Traveler</b><br />by Darwin Guevarra<br />Acrylic on canvas (26" x 34")</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+		<span class="w3-white w3-animate-bottom"><b>#artfusion!</b><br />July 9, 2017</span>
+      </div>
+    </div>
+	<div class="w3-display-container mySlides">
+      <img src="images/artworks/guniguni.jpg" title="Guni-Guni" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Guni-Guni</b> by Philipp Ines<br />Oil, pencil on canvas 2017<br />(36" x 24")</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+		<span class="w3-white w3-animate-bottom"><b>#artfusion!</b><br />July 9, 2017</span>
+      </div>
+    </div>
+	<div class="w3-display-container mySlides">
+      <img src="images/artworks/lilim.jpg" title="Lilim" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Lilim</b><br />by Jim Orencio</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+		<span class="w3-white w3-animate-bottom"><b>#artfusion!</b><br />July 9, 2017</span>
+      </div>
+    </div>
+	<div class="w3-display-container mySlides">
+      <img src="images/artworks/kineticsculpture.jpg" title="Kinetic Sculpture" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Kinetic Sculpture</b><br />by Migi Sebastian<br />Metal, gears</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+		<span class="w3-white w3-animate-bottom"><b>#artfusion!</b><br />July 9, 2017</span>
+      </div>
+    </div>
+	<div class="w3-display-container mySlides">
+      <img src="images/artworks/austerellutions.jpg" title="Austere Illusions" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Austere Illusions</b><br />by Mike Seiling<br />Acrylic on canvas 2017<br />36" x 24" dyptich (38" x 48")</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+		<span class="w3-white w3-animate-bottom"><b>#artfusion!</b><br />July 9, 2017</span>
+      </div>
+    </div>
+	<div class="w3-display-container mySlides">
+      <img src="images/artworks/pilot1.jpg" title="Pilot 1" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Pilot 1</b> by Manuel Sintos<br />Oil on canvas<br />(30" x 23")</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+		<span class="w3-white w3-animate-bottom"><b>#artfusion!</b><br />July 9, 2017</span>
+      </div>
+    </div>
+	<div class="w3-display-container mySlides">
+      <img src="images/artworks/pandorasbox.jpg" title="Pandora's Box" />
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-animate-bottom"><b>Pandora's Box</b><br />by DengCoy Miel<br />Oil on canvas<br />(20" x 16")</span>
+      </div>
+	  <div class="w3-display-bottomright w3-container w3-padding-32">
+		<span class="w3-white w3-animate-bottom"><b>Enigmas</b><br />July 9-24, 2017</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" title="Previous" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" title="Next" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+		<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+		<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+		<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+		<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+		<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <!-- <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What's New?</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>Current Exhibitions</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>Upcoming Exhibitions</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>Press</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Links</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+  </div>-->
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="whats-new">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What's New?</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-16">Current Exhibitions</li>
+        <li class="w3-padding-16"><b>Enigmas</b> by DengCoy Miel (July 9-24, 2017)</li>
+        <li class="w3-padding-16"><b>#artfusion!</b> Various Artists (July 9, 2017)</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-16">Upcoming Exhibitions</li>
+        <li class="w3-padding-16">Watch out for upcoming exhibitions! We'll keep you posted.</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-16">Press</li>
+        <li class="w3-padding-16"><a href="http://lifestyle.mb.com.ph/2017/04/03/all-about-her/">All About Her</a></li>
+        <li class="w3-padding-16"><a href="http://lifestyle.inquirer.net/244774/two-artists-align-visions-anxieties/">Two Artists Align Visions Anxieties</a></li>
+        <li class="w3-padding-16"><a href="http://www.spot.ph/arts-culture/the-latest-arts-culture/67933/art-galleries-quezon-city-a00171-20160930-lfrm?ref=feed_1">Art Galleries Quezon City</a></li>
+        <li class="w3-padding-16"><a href="http://lifestyle.inquirer.net/227850/dengcoy-miel-holds-first-one-man-exhibit/">Dengcoy Miel Holds First One Man Exhibit</a></li>
+		<li class="w3-padding-16"><a href="http://www.choosephilippines.com/do/events-and-nightlife/3045/kaida-contemporary-aligned">Kaida Contemporary Aligned</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <!-- <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+	  <form class="w3-container" action="/action_page.php" target="_blank">
+		<div class="w3-section">
+		  <label>Name</label>
+		  <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+		</div>
+		<div class="w3-section">
+		  <label>Email</label>
+		  <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+		</div>
+		<div class="w3-section">
+		  <label>Subject</label>
+		  <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+		</div>
+		<div class="w3-section">
+		  <label>Message</label>
+		  <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+		</div>
+		<button type="submit" class="w3-button w3-block w3-black">Send</button>
+	  </form>-->
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>© 2017 Kaida Contemporary</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/ie10-viewport-bug-workaround.js"></script>
+<script src="scripts/TweenLite.min.js"></script>
+<script src="scripts/EasePack.min.js"></script>
+<script src="scripts/rAF.js"></script>
+<script src="scripts/paper-effect.js"></script>
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
